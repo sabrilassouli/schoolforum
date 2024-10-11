@@ -1,0 +1,192 @@
+.page-container {
+  display: flex; /* Flexbox layout */
+}
+
+.courses-container {
+  width: 250px; /* Fixed width for the courses list */
+  background-color: #2c2c2c; /* Background color for the sidebar */
+  padding: 20px; /* Padding for the sidebar */
+  border-radius: 8px; /* Rounded corners */
+  color: #e0e0e0; /* Text color */
+}
+
+.courses-title {
+  font-size: 24px; /* Title size for courses */
+  color: #e0e0e0; /* Title color */
+  margin-bottom: 15px; /* Margin below title */
+  text-align: center; /* Centered title */
+}
+
+.courses-list {
+  list-style: none; /* No bullet points */
+  padding: 0; /* No padding */
+}
+
+.course-item {
+  margin-bottom: 10px; /* Margin below each course item */
+}
+
+.course-button {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Padding for buttons */
+  background-color: #007bff; /* Button color */
+  color: #e0e0e0; /* Text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  text-align: left; /* Left aligned text */
+}
+
+.course-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Existing styles for course details and questions */
+.course-detail-container {
+  flex-grow: 1; /* Take up the remaining space */
+  max-width: 800px; /* Maximum width */
+  padding: 20px; /* Padding for the main container */
+  background-color: #1e1e1e; /* Background color */
+  color: #e0e0e0; /* Text color */
+  border-radius: 8px; /* Rounded corners */
+  margin: 0 auto; /* Center the questions section */
+}
+
+.course-header {
+  text-align: center; /* Centered text */
+  color: #e0e0e0; /* Text color */
+  margin-bottom: 20px; /* Margin below header */
+}
+
+.course-info p {
+  margin: 10px 0; /* Margin for paragraph */
+  font-size: 18px; /* Font size */
+}
+
+.question-list {
+  list-style: none; /* No bullet points */
+  padding: 0; /* No padding */
+}
+
+.question-item {
+  background-color: #2c2c2c; /* Background color for questions */
+  color: #e0e0e0; /* Text color */
+  padding: 15px; /* Padding for question items */
+  margin: 10px 0; /* Margin between question items */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.question-item strong {
+  display: block; /* Block display for strong text */
+  font-size: 20px; /* Font size for strong text */
+  color: #007bff; /* Color for strong text */
+}
+
+.question-details {
+  margin-top: 10px; /* Margin above question details */
+}
+
+.question-details p {
+  display: inline-block; /* Inline-block for details */
+  margin-right: 10px; /* Margin between details */
+}
+
+.question-details a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Bold text */
+}
+
+.question-details a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.error-message {
+  color: #e74c3c; /* Error message color */
+  text-align: center; /* Centered error message */
+  font-weight: bold; /* Bold error message */
+}
+
+.post-question-container {
+  background-color: #2c2c2c; /* Background color */
+  color: #e0e0e0; /* Text color */
+  padding: 20px; /* Padding for question form */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 20px; /* Margin above question form */
+}
+
+.post-question-container h2 {
+  text-align: center; /* Centered title */
+  color: #e0e0e0; /* Title color */
+  margin-bottom: 20px; /* Margin below title */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Margin below form group */
+}
+
+.form-group label {
+  display: block; /* Block display for labels */
+  font-size: 18px; /* Font size for labels */
+  margin-bottom: 5px; /* Margin below labels */
+  color: #e0e0e0; /* Label color */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Full width inputs */
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #444; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #1e1e1e; /* Background color */
+  color: #e0e0e0; /* Text color */
+  font-size: 16px; /* Font size */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none; /* No outline */
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+  height: 100px; /* Initial height */
+}
+
+button[type="submit"],
+button[type="button"] {
+  background-color: #007bff; /* Button color */
+  color: #e0e0e0; /* Text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for buttons */
+  font-size: 16px; /* Font size for buttons */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  margin-right: 10px; /* Margin to the right */
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+button[type="button"] {
+  background-color: #e74c3c; /* Color for cancel button */
+}
+
+button[type="button"]:hover {
+  background-color: #c0392b; /* Darker color on hover */
+}
+
+.success {
+  color: #2ecc71; /* Success message color */
+  font-weight: bold; /* Bold success message */
+  margin-top: 10px; /* Margin above success message */
+}
+
+.error {
+  color: #e74c3c; /* Error message color */
+  font-weight: bold; /* Bold error message */
+  margin-top: 10px; /* Margin above error message */
+}

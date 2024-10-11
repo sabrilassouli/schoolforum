@@ -1,0 +1,43 @@
+version: '3.8'  # Specify the version of the Docker Compose file
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - NODE_ENV=development
+      - DB_HOST=db  # Make sure to define your DB connection environment variables
+      - DB_USER=sabri
+      - DB_PASSWORD=amazingpassword
+      - DB_NAME=forumDatabase
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
+
+  db:  # Ensure this is under services
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: sabri
+      POSTGRES_PASSWORD: amazingpassword
+      POSTGRES_DB: forumDatabase
+    volumes:
+      - forumData:/var/lib/postgresql/data
+
+volumes:
+  forumData: {}
